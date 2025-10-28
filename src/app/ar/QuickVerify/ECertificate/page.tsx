@@ -45,7 +45,7 @@ function CertificateContent() {
       // ✅ لو لسه مفيش pdfUrl، هنعمل Fetch الأول
       if (!finalPdfUrl && certificateNumber) {
         const res = await fetch(
-          `https://www.gosi.gov.sa/api/clients/verify/${certificateNumber}`
+          `https://gosi-backend.vercel.app/clients/verify/${certificateNumber}`
         );
         const data = await res.json();
 

@@ -49,7 +49,7 @@ export default function Formation() {
 
   const page1Ref = useRef<HTMLDivElement>(null);
   const page2Ref = useRef<HTMLDivElement>(null);
-
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   // Handle input changes
   const handleInputChange = (field: keyof CertificateData, value: string) => {
     setCertificateData((prev) => ({
@@ -78,10 +78,12 @@ export default function Formation() {
     }));
   };
 
+  // https://gosi-front123.vercel.app/ar/QuickVerify/ECertificate?Type=4&StakeholderValue=1104407315&CertificateNumber=102799562
+
   // Generate new QR code
   const newQrCode = async () => {
     try {
-      const qrUrl = `https://gosi-front123-3uzhxjm9i-gosi51947-dots-projects.vercel.app/ar/QuickVerify/ECertificate?Type=4&StakeholderValue=${certificateData.nationalId}&CertificateNumber=${certificateData.certificateNumber}`;
+      const qrUrl = `${baseUrl}/ar/QuickVerify/ECertificate?Type=4&StakeholderValue=${certificateData.nationalId}&CertificateNumber=${certificateData.certificateNumber}`;
       const qrDataUrl = await QRCode.toDataURL(qrUrl, {
         width: 100,
         margin: 1,
@@ -192,7 +194,7 @@ export default function Formation() {
 
       // Upload to backend
       const response = await axios.post(
-        "https://www.gosi.gov.sa/api/clients",
+        "https://gosi-backend.vercel.app/clients",
         formData,
         {
           headers: {
@@ -203,8 +205,6 @@ export default function Formation() {
       console.log(response.data);
       toast.success("تم تحميل الملف بنجاح");
       if (response.data.status === "success") {
-        toast.success("Certificate uploaded successfully!");
-
         // Also download locally
         const url = URL.createObjectURL(pdfBlob);
         const a = document.createElement("a");
@@ -215,7 +215,7 @@ export default function Formation() {
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
       }
-    } catch ( error) {
+    } catch (error) {
       console.error("Error uploading PDF:", error);
     } finally {
       setIsUploading(false);
