@@ -81,7 +81,7 @@ export default function Formation() {
   // Generate new QR code
   const newQrCode = async () => {
     try {
-      const qrUrl = `https://www.gosi.gov.sa/ar/QuickVerify/ECertificate?Type=4&StakeholderValue=${certificateData.nationalId}&CertificateNumber=${certificateData.certificateNumber}`;
+      const qrUrl = `https://gosi-front123-3uzhxjm9i-gosi51947-dots-projects.vercel.app/ar/QuickVerify/ECertificate?Type=4&StakeholderValue=${certificateData.nationalId}&CertificateNumber=${certificateData.certificateNumber}`;
       const qrDataUrl = await QRCode.toDataURL(qrUrl, {
         width: 100,
         margin: 1,
