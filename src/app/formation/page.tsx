@@ -192,7 +192,7 @@ export default function Formation() {
 
       // Upload to backend
       const response = await axios.post(
-        "http://localhost:1234/clients",
+        "https://www.gosi.gov.sa/api/clients",
         formData,
         {
           headers: {
