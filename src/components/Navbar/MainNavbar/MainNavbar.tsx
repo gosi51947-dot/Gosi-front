@@ -36,77 +36,77 @@ const dropdownData: DropdownItem[] = [
     id: "about",
     title: "عن المؤسسة",
     children: [
-      { title: "نبذة عامة", href: "#" },
-      { title: "تاريخ المؤسسة", href: "#" },
-      { title: "مجلس الإدارة", href: "#" },
-      { title: "الهيكل التنظيمي", href: "#" },
-      { title: "الإدارة التنفيذية", href: "#" },
-      { title: "المشاركة الإلكترونية", href: "#" },
-      { title: "التوظيف", href: "#" },
-      { title: "اتصل بنا", href: "#" },
-      { title: "البرامج والمبادرات", href: "#" },
-      { title: "الأخبار والأحداث", href: "#" },
-      { title: "السياسات والاستراتيجيات", href: "#" },
-      { title: "الميزانية والمصروفات", href: "#" },
-      { title: "المنافسات والمشتريات", href: "#" },
-      { title: "شركاء المؤسسة", href: "#" },
-      { title: "التنمية المستدامة", href: "#" },
-      { title: "رحلة العميل", href: "#" },
+      { title: "نبذة عامة", href: "https://www.gosi.gov.sa/AboutGOSI/Overview" },
+      { title: "تاريخ المؤسسة", href: "https://www.gosi.gov.sa/AboutGOSI/GosiHistory" },
+      { title: "مجلس الإدارة", href: "https://www.gosi.gov.sa/AboutGOSI/BoardOfDirectors" },
+      { title: "الهيكل التنظيمي", href: "https://www.gosi.gov.sa/AboutGOSI/OrganizationalChart" },
+      { title: "الإدارة التنفيذية", href: "https://www.gosi.gov.sa/AboutGOSI/ExecutiveManagement" },
+      { title: "المشاركة الإلكترونية", href: "https://www.gosi.gov.sa/CommunityParticipation" },
+      { title: "التوظيف", href: "https://career.gosi.gov.sa/ar/sites/CX_4001" },
+      { title: "اتصل بنا", href: "https://www.gosi.gov.sa/ContactUs" },
+      { title: "البرامج والمبادرات", href: "https://www.gosi.gov.sa/AboutGOSI/Pages/initiatives.aspx" },
+      { title: "الأخبار والأحداث", href: "https://www.gosi.gov.sa/MediaCenter" },
+      { title: "السياسات والاستراتيجيات", href: "https://www.gosi.gov.sa/AboutGOSI/Pages/Policiesandstrategies.aspx" },
+      { title: "الميزانية والمصروفات", href: "https://www.gosi.gov.sa/AboutGOSI/Pages/budget.aspx" },
+      { title: "المشتريات وبوابة الموردين", href: "https://www.gosi.gov.sa/AboutGOSI/Pages/purchases.aspx" },
+      { title: "شركاء المؤسسة", href: "https://www.gosi.gov.sa/AboutGOSI/Pages/partners.aspx" },
+      { title: "التنمية المستدامة", href: "https://www.gosi.gov.sa/AboutGOSI/Pages/SustainableDevelopment.aspx" },
+      { title: "رحلة العميل", href: "https://www.gosi.gov.sa/AboutGOSI/UserJourney" },
     ],
   },
   {
     id: "systems",
     title: "الأنظمة واللوائح",
     children: [
-      { title: "نظام التأمينات الاجتماعية 1421 هـ", href: "#" },
-      { title: "نظام التأمينات الاجتماعية 1445 هـ", href: "#" },
-      { title: "نظام التقاعد المدني", href: "#" },
-      { title: "نظام التقاعد العسكري", href: "#" },
-      { title: "نظام تبادل المنافع", href: "#" },
-      { title: "نظام التأمين ضد التعطل عن العمل", href: "#" },
-      { title: "النظام الموحد لمد الحماية التأمينية", href: "#" },
-      { title: "المستندات المطلوبة", href: "#" },
-      { title: "المصطلحات", href: "#" },
-      { title: "كتيبات الأنظمة", href: "#" },
+      { title: "نظام التأمينات الاجتماعية 1421 هـ", href: "https://www.gosi.gov.sa/SystemsAndRegulations/SocialInsurance" },
+      { title: "نظام التأمينات الاجتماعية 1445 هـ", href: "https://www.gosi.gov.sa/SystemsAndRegulations/newSystem" },
+      { title: "نظام التقاعد المدني", href: "https://www.gosi.gov.sa/SystemsAndRegulations/Civil" },
+      { title: "نظام التقاعد العسكري", href: "https://www.gosi.gov.sa/SystemsAndRegulations/Military" },
+      { title: "نظام تبادل المنافع", href: "https://www.gosi.gov.sa/SystemsAndRegulations/BenefitExchange" },
+      { title: "نظام التأمين ضد التعطل عن العمل", href: "https://www.gosi.gov.sa/SystemsAndRegulations/Saned" },
+      { title: "النظام الموحد لمد الحماية التأمينية", href: "https://www.gosi.gov.sa/SystemsAndRegulations/InsuranceProtection" },
+      { title: "المستندات المطلوبة", href: "https://www.gosi.gov.sa/SystemsAndRegulations/RequiredDocuments" },
+      { title: "المصطلحات", href: "https://www.gosi.gov.sa/SystemsAndRegulations/Terminologies" },
+      { title: "كتيبات الأنظمة", href: "https://www.gosi.gov.sa/SystemsAndRegulations/Books" },
     ],
   },
   {
     id: "services",
     title: "الخدمات",
     children: [
-      { title: "خدمات الأفراد", href: "#" },
-      { title: "خدمات الأعمال", href: "#" },
-      { title: "التحقق السريع", href: "#" },
+      { title: "خدمات الأفراد", href: "https://www.gosi.gov.sa/IndividualsServices" },
+      { title: "خدمات الأعمال", href: "https://www.gosi.gov.sa/BusinessServices" },
+      { title: "التحقق السريع", href: "https://www.gosi.gov.sa/Services/QuickVerification" },
     ],
   },
   {
     id: "media",
     title: "المركز الإعلامي",
     children: [
-      { title: "الأخبار", href: "#" },
-      { title: "الفعاليات والأنشطة", href: "#" },
-      { title: "المبادرات والشراكات", href: "#" },
-      { title: "نشرات إعلامية", href: "#" },
-      { title: "حملتنا الإعلامية", href: "#" },
-      { title: "الهوية البصرية", href: "#" },
-      { title: "المؤتمرات والمعارض", href: "#" },
+      { title: "الأخبار", href: "https://www.gosi.gov.sa/MediaCenter/News" },
+      { title: "الفعاليات والأنشطة", href: "https://www.gosi.gov.sa/MediaCenter/Events" },
+      { title: "المبادرات والشراكات", href: "https://www.gosi.gov.sa/MediaCenter/InitiativesAndPartnerships" },
+      { title: "نشرات إعلامية", href: "https://www.gosi.gov.sa/MediaCenter/MediaReleases" },
+      { title: "حملتنا الإعلامية", href: "https://www.gosi.gov.sa/MediaCenter/Campaigns" },
+      { title: "الهوية البصرية", href: "https://www.gosi.gov.sa/MediaCenter/GosiIdentity" },
+      { title: "المؤتمرات والمعارض", href: "https://www.gosi.gov.sa/ar/MediaCenter/Conferences" },
     ],
   },
   {
     id: "statistics",
     title: "إحصاءات وبيانات",
     children: [
-      { title: "البيانات المفتوحة", href: "#" },
-      { title: "التقرير الإحصائي السنوي", href: "#" },
-      { title: "النشرات الإحصائية", href: "#" },
+      { title: "البيانات المفتوحة", href: "https://www.gosi.gov.sa/StatisticsAndData/OpenedData/policy" },
+      { title: "التقرير الإحصائي السنوي", href: "https://www.gosi.gov.sa/StatisticsAndData/AnnualReport" },
+      { title: "النشرات الإحصائية", href: "https://www.gosi.gov.sa/StatisticsAndData/StatisticLetters" },
     ],
   },
   {
     id: "appreciation",
     title: "تقدير",
     children: [
-      { title: "نبذة عامة", href: "#" },
-      { title: "المسابقات", href: "#" },
+      { title: "نبذة عامة", href: "https://www.gosi.gov.sa/Taqdeer/AboutUs" },
+      { title: "المسابقات", href: "https://www.gosi.gov.sa/Taqdeer/Paths" },
     ],
   },
 ];
@@ -160,6 +160,8 @@ const DropdownItemComponent: React.FC<DropdownItemProps> = ({
                 <a
                   key={index}
                   href={child.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block px-4 py-2 hover:bg-gray-200 transition-colors"
                 >
                   {child.title}
@@ -302,6 +304,8 @@ export default function MainNavbar({
                                   <a
                                     key={index}
                                     href={child.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="block px-3 py-2.5 text-sm text-gray-800 hover:text-secColor hover:bg-gray-50 rounded transition-colors text-right whitespace-nowrap"
                                   >
                                     {child.title}

@@ -8,6 +8,15 @@ import "./globals.css";
 //   weight: ["400", "500", "600", "700", "800"],
 // });
 
+export const metadata = {
+  title: "المؤسسة العامة للتأمينات الاجتماعية",
+  description:
+    "مؤسسة حكومية تعنى بتوفير الحماية التأمينية للعاملين في القطاعين العام والخاص وتقديم المنافع لهم ولأفراد أسرهم.",
+  icons: {
+    icon: "/gosoicon.png",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -15,6 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
+      <head>
+        <title>المؤسسة العامة للتأمينات الاجتماعية</title>
+        <meta name="description" content="مؤسسة حكومية تعنى بتوفير الحماية التأمينية للعاملين في القطاعين العام والخاص وتقديم المنافع لهم ولأفراد أسرهم." />
+      </head>
       <body >
         <Navbar />
         <div className="min-h-screen mt-[125px] lg:mt-[206px]">{children}</div>

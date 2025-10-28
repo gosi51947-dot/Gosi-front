@@ -16,39 +16,39 @@ const footerColumns = [
   {
     title: "عن المؤسسة",
     links: [
-      { text: "عن المؤسسة", href: "#" },
-      { text: "الأخبار و الفعاليات", href: "#" },
-      { text: "إتفاقية الاستخدام", href: "#" },
-      { text: "الخصوصية وسرية البيانات", href: "#" },
-      { text: "سياسة حرية المعلومات", href: "#" },
-      { text: "سياسة أمن المنصة", href: "#" },
-      { text: "إتفاقية مستوى الخدمة", href: "#" },
-      { text: "الشروط والأحكام", href: "#" },
-      { text: "النشرة البريدية", href: "#" },
-      { text: "سياسة التعامل مع الشكاوى ورضا العملاء", href: "#" },
+      { text: "عن المؤسسة", href: "https://www.gosi.gov.sa/ar/AboutGOSI" },
+      { text: "الأخبار و الفعاليات", href: "https://www.gosi.gov.sa/ar/MediaCenter" },
+      { text: "إتفاقية الاستخدام", href: "https://www.gosi.gov.sa/ar/Pages/TermsofUse" },
+      { text: "الخصوصية وسرية البيانات", href: "https://www.gosi.gov.sa/ar/Pages/PrivacyPolicy" },
+      { text: "سياسة حرية المعلومات", href: "https://www.gosi.gov.sa/ar/Pages/Info-Rights.aspx" },
+      { text: "سياسة أمن المنصة", href: "https://www.gosi.gov.sa/ar/Pages/PlatformSecurityPolicy" },
+      { text: "إتفاقية مستوى الخدمة", href: "https://www.gosi.gov.sa/ar/Pages/SLA.aspx" },
+      { text: "الشروط والأحكام", href: "https://www.gosi.gov.sa/ar/Pages/TermsandConditions" },
+      { text: "النشرة البريدية", href: "https://www.gosi.gov.sa/ar/AboutGOSI/Subscription" },
+      { text: "سياسة التعامل مع الشكاوى ورضا العملاء", href: "https://www.gosi.gov.sa/ar/Pages/CHACSPolicy" },
     ],
   },
   {
     title: "الدعم والمساندة",
     links: [
-      { text: "اتصل بنا", href: "#" },
-      { text: "الأسئلة الشائعة", href: "#" },
-      { text: "المشاركة الإلكترونية", href: "#" },
-      { text: "بلاغ عن فساد", href: "#" },
-      { text: "خريطة الموقع", href: "#" },
-      { text: "التوظيف", href: "#" },
+      { text: "اتصل بنا", href: "https://www.gosi.gov.sa/ar/ContactUs" },
+      { text: "الأسئلة الشائعة", href: "https://www.gosi.gov.sa/ContactUs/Faq/BySubject" },
+      { text: "المشاركة الإلكترونية", href: "https://www.gosi.gov.sa/ar/CommunityParticipation" },
+      { text: "بلاغ عن فساد", href: "https://www.gosi.gov.sa/ar/Pages/ReportCorruption" },
+      { text: "خريطة الموقع", href: "https://www.gosi.gov.sa/ar/SiteMap" },
+      { text: "التوظيف", href: "https://career.gosi.gov.sa/ar/sites/CX_4001" },
     ],
   },
   {
     title: "روابط مهمة",
     links: [
-      { text: "وزارة المالية", href: "#" },
-      { text: "وزارة الموارد البشرية والتنمية الاجتماعية", href: "#" },
-      { text: "المنصة الوطنية", href: "#" },
-      { text: "الجمعية الدولية للضمان الاجتماعي (ISSA)", href: "#" },
-      { text: "منصة المشاركة الإلكترونية", href: "#" },
-      { text: "الإستراتيجية الوطنية للبيانات و الذكاء الاصطناعي", href: "#" },
-      { text: "منصة البيانات المفتوحة", href: "#" },
+      { text: "وزارة المالية", href: "https://www.gosi.gov.sa/ar/SiteMap" },
+      { text: "وزارة الموارد البشرية والتنمية الاجتماعية", href: "https://www.hrsd.gov.sa/" },
+      { text: "المنصة الوطنية", href: "https://my.gov.sa/ar" },
+      { text: "الجمعية الدولية للضمان الاجتماعي (ISSA)", href: "https://www.issa.int/" },
+      { text: "منصة المشاركة الإلكترونية", href: "https://eparticipation.my.gov.sa/" },
+      { text: "الإستراتيجية الوطنية للبيانات و الذكاء الاصطناعي", href: "https://ai.sa/index-ar.html" },
+      { text: "منصة البيانات المفتوحة", href: "https://open.data.gov.sa/" },
     ],
     footer: {
       label: "تاريخ آخر تحديث للبيانات",
@@ -115,7 +115,6 @@ export default function Footer() {
           </div>
           <p className="text-lg">أدوات سهولة الوصول</p>
           <a
-            target="_blank"
             href="https://deaf.dga.gov.sa/"
             className="border-2 flex items-center gap-4  border-secColor self-start px-1 py-2 rounded-md"
           >
