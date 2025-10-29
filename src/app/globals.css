@@ -2,14 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* normal font */
 @font-face {
     font-family: 'Tahoma';
-    src: url('/gosi-frontend/public/fonts/103-Tahoma.ttf') format('truetype');
-    font-weight: normal;
+    src: url('/gosi-frontend/public/Tahoma/TahomaReualar.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     
+  }
+  /* bold font */
+  @font-face {
+    font-family: 'Tahoma';
+    src: url('/gosi-frontend/public/Tahoma/TAHOMAB0.TTF') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  /* extra bold font */
+  @font-face {
+    font-family: 'Tahoma';
+    src: url('/gosi-frontend/public/Tahoma/TAHOMAB0.TTF') format('truetype');
+    font-weight: 800;
+    font-style: normal;
   }
   body {
     font-family: 'Tahoma', sans-serif;
   }
- 
+ .figo{
+  grid-auto-rows: 150px;
+ }

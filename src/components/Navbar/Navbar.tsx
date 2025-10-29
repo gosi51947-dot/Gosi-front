@@ -30,7 +30,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0   left-0 right-0 z-50 whitespace-nowrap">
+    <nav className="fixed top-0  text-sm   left-0 right-0 z-50 whitespace-nowrap">
       {/* first part of navbar */}
       <div
         className={`px-4 bg-blueColor  flex gap-2 items-center justify-around md:justify-center  mx-auto  ${

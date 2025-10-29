@@ -223,7 +223,7 @@ export default function Formation() {
   };
 
   return (
-    <section className="pdf   min-h-screen mt-40 bg-gray-100 p-4">
+    <section className="pdf font-tahoma   min-h-screen mt-40 bg-gray-100 p-4">
       <Toaster position="top-right" />
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col  xl:flex-row  gap-4">

@@ -7,8 +7,8 @@ export default function HeaderLogo({data,numberPage}: {data: CertificateData,num
   return (
     <div className="flex justify-between items-start ">
     {/* Right side - Arabic header */}
-    <div className="text-right flex-1 mt-9">
-      <div className=" text-gray-700 mb-4 space-y-2">
+    <div className="text-right  flex-1 mt-7">
+      <div className="  mb-4 space-y-1">
         <div>ﺍﻟﺼــــﻔــﺤــﺔ: {numberPage} من 2 </div>
         <div>ﺍﻟﺘﺎﺭﻳـــــــــﺦ: {data.headerDate}</div>
         <div>ﺍﻟﻤﻮﺍﻓـــــــﻖ: {data.correspondingDate}</div>

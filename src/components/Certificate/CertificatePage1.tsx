@@ -14,13 +14,7 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
     return (
       <div
         ref={ref}
-        className="w-[794px] min-h-[1240px]   text-[12px] bg-white p-8 py-2  font-sans text-right relative"
-        style={{
-          fontFamily: "Arial, sans-serif",
-          direction: "rtl",
-          fontSize: "14px",
-          lineHeight: "1.4",
-        }}
+        className="w-[794px]  h-[1260px] font-tahoma text-mColor   bg-white  py-6 px-12  text-right relative"
       >
         {/* Header Section */}
         <div className="mb-10">
@@ -29,13 +23,13 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
 
         {/* Certificate Title */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-[900]  mb-2 text-mColor  ">
+          <h1 className="text-2xl font-[900]  mb-8 text-mColor  ">
             {data.certificateTitle}
           </h1>
         </div>
         {/* page infromation */}
         {/* Personal Information Table */}
-        <div className="mb-6 text-lg">
+        <div className="mb-6 ">
           <table className="w-full ">
             <tbody className="flex flex-col gap-1">
               <tr className="grid grid-cols-6">
@@ -65,63 +59,90 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
         </div>
 
         {/* Subscription Table */}
-        <div className="mb-6 text-lg">
+        {/* <div className="mb-6  font-[600]">
           <div className="">
-            <div className="grid grid-cols-4 whitespace-nowrap">
-              <div
-                className="text-center pb-3 px-2 text-white   border-l border-gray-400"
-                style={{ backgroundColor: "#00BF00" }}
-              >
+            <div className="flex justify-between bg-secColor  whitespace-nowrap">
+              <div className="text-center pb-3 px-2 text-white   border-l border-gray-400">
                 نظامي التقاعد
               </div>
-              <div
-                className="text-center pb-3 px-2 text-white   border-l border-gray-400"
-                style={{ backgroundColor: "#00BF00" }}
-              >
+              <div className="text-center pb-3 px-2 text-white   border-l border-gray-400">
                 نظام التأمينات
               </div>
-              <div
-                className="text-center pb-3 px-2 text-white   border-l border-gray-400"
-                style={{ backgroundColor: "#00BF00" }}
-              >
+              <div className="text-center pb-3 px-2 text-white   border-l border-gray-400">
                 إجمالي أشهر المصروفة
               </div>
-              <div
-                className="text-center pb-3 px-2 text-white  "
-                style={{ backgroundColor: "#00BF00" }}
-              >
+              <div className="text-center pb-3 px-2 text-white  ">
                 إجمالي أشهر الاشتراك
               </div>
             </div>
 
-            <div className="grid grid-cols-4 border-t border-gray-400">
-              <div className="text-center pb-3 px-2  bg-[#EEEFEF]">
+            <div className="flex  border-t border-gray-400">
+              <div className="text-center grow pb-3 px-2  bg-[#EEEFEF]">
                 {data.tableData.beneficiaryMonths}
               </div>
-              <div className="text-center pb-3 px-2  bg-[#EEEFEF]">
+              <div className="text-center pb-3 grow px-2  bg-[#EEEFEF]">
                 {data.tableData.employerMonths}
               </div>
-              <div className="text-center pb-3 px-2  bg-[#EEEFEF]">
+              <div className="text-center pb-3 grow px-2  bg-[#EEEFEF]">
                 {data.tableData.establishmentsMonths}
               </div>
-              <div className="text-center pb-3 px-2 bg-[#EEEFEF]">
+              <div className="text-center pb-3 grow px-2 bg-[#EEEFEF]">
                 {data.tableData.months}
               </div>
             </div>
           </div>
+        </div> */}
+        {/* update subscription table */}
+        <div className="flex  mb-6 text-nowrap">
+          {/* firs column */}
+          <section className="grow">
+            <div className="text-center font-semibold bg-secColor pb-3 px-2 text-white   border-l border-gray-400">
+              نظامي التقاعد
+            </div>
+            <div className="text-center grow pb-3 px-2  bg-[#EEEFEF]">
+              {data.tableData.beneficiaryMonths}
+            </div>
+          </section>
+          {/* secound column */}
+          <section>
+            <div className="text-center  bg-secColor pb-3 px-2 text-white font-semibold   border-l border-gray-400">
+              نظام التأمينات
+            </div>
+            <div className="text-center grow pb-3 px-2  bg-[#EEEFEF]">
+              {data.tableData.employerMonths}
+            </div>
+          </section>
+          {/* third column */}
+          <section className="grow">
+            <div className="text-center bg-secColor font-semibold pb-3 px-2 text-white   border-l border-gray-400">
+              إجمالي أشهر المصروفة
+            </div>
+            <div className="text-center  grow pb-3 px-2  bg-[#EEEFEF]">
+              {data.tableData.establishmentsMonths}
+            </div>
+          </section>
+          {/* fourth column */}
+          <section className="grow">
+            <div className="text-center bg-secColor font-semibold pb-3 px-2 text-white   border-l border-gray-400">
+              إجمالي أشهر الاشتراك
+            </div>
+            <div className="text-center grow pb-3 px-2  bg-[#EEEFEF]">
+              {data.tableData.months}
+            </div>
+          </section>
         </div>
 
         {/* Company Information */}
-        <div className="mb-6 text-lg">
+        <div className="mb-6 text-lg whitespace-nowrap">
           <table className="w-full ">
             <thead className="w-full">
               <tr className="flex w-full">
                 <td className="text-center  flex    ">
-                  <span className=" bg-gray-100 pb-3  flex items-center justify-center h-full w-8">
+                  <span className=" bg-gray-100 pb-3  flex items-center justify-center h-full w-6">
                     {" "}
                     1
                   </span>
-                  <p className="text-white text-center  bg-secColor pb-3 px-[24.5px] font-semibold flex items-center whitespace-nowrap">
+                  <p className="text-white text-center  bg-secColor pb-3 px-[7px] font-semibold flex items-center whitespace-nowrap">
                     {" "}
                     الجهة / المنشأة
                   </p>
@@ -134,83 +155,103 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
             <tbody className="w-full space-y-[1px]">
               {/* first */}
               <tr className="grid grid-cols-4">
-                <td className="bg-secColor text-center text-white font-semibold pb-3 p-2">
+                <td className="bg-secColor text-center text-white font-semibold pb-3 p-1">
                   رقم المنشأة
                 </td>
-                <td className="bg-[#EEEFEF] text-center pb-3 p-2">
+                <td className="bg-[#EEEFEF] text-center pb-3 p-1">
                   {data.establishmentNumber}
                 </td>
-                <td className="bg-secColor text-center font-semibold text-white pb-3 p-2">
+                <td className="bg-secColor text-center font-semibold text-white pb-3 p-1">
                   النظام
                 </td>
-                <td className="bg-[#EEEFEF] text-center pb-3 p-2">
+                <td className="bg-[#EEEFEF] text-center pb-3 p-1">
                   نظام التأمينات
                 </td>
               </tr>
               {/* secound */}
-              <tr className="grid grid-cols-4">
-                <td className="bg-secColor text-center text-white font-semibold pb-3 p-2">
+              <tr className="grid grid-cols-4 ">
+                <td className="bg-secColor text-[15px]  text-center text-white font-semibold pb-3 p-1">
                   ﺍﻷﺟﺮ ﺍﻟﺨﺎﺿﻊ ﻟﻼﺷﺘﺮﺍﻙ
                 </td>
-                <td className="bg-[#EEEFEF] text-center flex items-center justify-center  p-2">
+                <td className="bg-[#EEEFEF] flex justify-center items-center  p-2">
                   <span className="pb-4">{data.subscriptionWage}</span>
-                  { data.subscriptionWage && <span> <Image src={iconDollar.src} alt="dollar" width={25} height={25} /> </span>}
+                  {data.subscriptionWage && (
+                    <span>
+                      {" "}
+                      <Image
+                        src={iconDollar.src}
+                        alt="dollar"
+                        width={25}
+                        height={25}
+                      />{" "}
+                    </span>
+                  )}
                 </td>
-                <td className="bg-secColor text-center font-semibold text-white pb-3 p-2">
+                <td className="bg-secColor text-center font-semibold text-white pb-3 p-1">
                   ﺇﺟﻤﺎﻟﻲ ﺍﻷﺟﺮ
                 </td>
                 <td className="bg-[#EEEFEF] text-center flex items-center justify-center  p-2">
-                   <span className="pb-4">  {data.totalWage}</span>
-                  { data.totalWage && <span> <Image src={iconDollar.src} alt="dollar" width={25} height={25} /> </span>}
-                  
+                  <span className="pb-4"> {data.totalWage}</span>
+                  {data.totalWage && (
+                    <span>
+                      {" "}
+                      <Image
+                        src={iconDollar.src}
+                        alt="dollar"
+                        width={25}
+                        height={25}
+                      />{" "}
+                    </span>
+                  )}
                 </td>
               </tr>
               {/* third */}
               <tr className="grid grid-cols-4">
-                <td className="bg-secColor text-center text-white font-semibold pb-3 p-2">
+                <td className="bg-secColor text-center text-white font-semibold pb-3 p-1">
                   ﺗﺎﺭﻳﺦ ﺍﻻﻟﺘﺤﺎﻕ
                 </td>
-                <td className="bg-[#EEEFEF] text-center pb-3 p-2">
+                <td className="bg-[#EEEFEF] text-center pb-3 p-1">
                   {data.joiningDate}
                 </td>
-                <td className="bg-secColor text-center font-semibold text-white pb-3 p-2">
+                <td className="bg-secColor text-center font-semibold text-white pb-3 p-1">
                   ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺒﻌﺎﺩ
                 </td>
-                <td className="bg-[#EEEFEF] text-center pb-3 p-2">
+                <td className="bg-[#EEEFEF] text-center pb-3 p-1">
                   {data.exclusionDate}
                 </td>
               </tr>
               {/* fourth */}
               <tr className="grid grid-cols-4">
-                <td className="bg-secColor text-center text-white font-semibold pb-3 p-2">
+                <td className="bg-secColor text-center text-white font-semibold pb-3 p-1">
                   ﺗﺎﺭﻳﺦ ﺑﺪﺍﻳﺔ ﺍﻷﺟﺮ
                 </td>
-                <td className="bg-[#EEEFEF] text-center pb-3 p-2">
+                <td className="bg-[#EEEFEF] text-center pb-3 p-1">
                   {data.wageStartDate}
                 </td>
-                <td className="bg-secColor text-center font-semibold text-white pb-3 p-2">
+                <td className="bg-secColor text-center font-semibold text-white pb-3 p-1">
                   ﺍﻟﺤﺎﻟﺔ
                 </td>
-                <td className="bg-[#EEEFEF] text-center pb-3 p-2">
+                <td className="bg-[#EEEFEF] text-center pb-3 p-1">
                   {data.currentStatus}
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        {/* mark */}
-        <p className="mr-auto mt-[115.2px]   w-4 h-[3px] bg-black"> </p>
+
+
         {/* Footer Text */}
-        <div className="mb-6  font-[00] ml-8 ">
-          <p className="  text-[20px]  ">
+        <div className="mb-6  mt-40">
+          <p className="  ">
             ﺗﺸﻬﺪ ﺍﻟﻤﺆﺳﺴﺔ ﺍﻟﻌﺎﻣﺔ ﻟﻠﺘﺄﻣﻴﻨﺎﺕ ﺍﻻﺟﺘﻤﺎﻋﻴﺔ ﺑﺄﻥ ﺍﻟﺒﻴﺎﻧﺎﺕ ﺍﻟﻤﻮﺿﺤﺔ ﺃﻋﻼﻩ
-            ﺣﺴﺐ ﻣﺎ ﻫﻮ ﻣﺴﺠﻞ ﻓﻲ ﻧﻈﺎﻣﻬﺎ ﻭﺑﻨﺎﺀ ﻋﻠﻰ ﺍﻟﺒﻴﺎﻧﺎﺕ ﺍﻟﺤﺎﻟﻴﺔ ﻭﻭﻓﻘﺎ ﻟﻠﻮﺿﻊ
-            ﺍﻟﺤﺎﻟﻲ ﻣﺎﻟﻢ ﻳﻄﺮﺃ ﺃﻱ ﺗﻐﻴﻴﺮ ﻋﻠﻰ ﺣﺎﻟﺔ ﺑﻴﺎﻧﺎﺕ <br></br>ﺻﺎﺣﺐ ﺍﻟﻮﺛﻴﻘﺔ ﻭﻗﺪ
+            ﺣﺴﺐ ﻣﺎ ﻫﻮ ﻣﺴﺠﻞ ﻓﻲ<br></br> ﻧﻈﺎﻣﻬﺎ ﻭﺑﻨﺎﺀ ﻋﻠﻰ ﺍﻟﺒﻴﺎﻧﺎﺕ ﺍﻟﺤﺎﻟﻴﺔ ﻭﻭﻓﻘﺎ
+            ﻟﻠﻮﺿﻊ ﺍﻟﺤﺎﻟﻲ ﻣﺎﻟﻢ ﻳﻄﺮﺃ ﺃﻱ ﺗﻐﻴﻴﺮ ﻋﻠﻰ ﺣﺎﻟﺔ ﺑﻴﺎﻧﺎﺕ ﺻﺎﺣﺐ ﺍﻟﻮﺛﻴﻘﺔ ﻭﻗﺪ
             ﺃﺻﺪﺭﺕ ﺑﻨﺎﺀ ﻋﻠﻰ ﻃﺎﻟﺐ ﺍﻟﻮﺛﻴﻘﺔ.
           </p>
         </div>
 
         {/* Footer with QR Code */}
+
         <FooterQrCode qrCodeDataUrl={qrCodeDataUrl} />
       </div>
     );

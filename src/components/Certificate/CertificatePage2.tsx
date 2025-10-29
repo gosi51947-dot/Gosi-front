@@ -14,13 +14,7 @@ const CertificatePage2 = forwardRef<HTMLDivElement, CertificatePage2Props>(
     return (
       <div
         ref={ref}
-        className="w-[794px] relative h-[1240px] bg-white p-8 font-sans text-right "
-        style={{
-          fontFamily: "Arial, sans-serif",
-          direction: "rtl",
-          fontSize: "14px",
-          lineHeight: "1.4",
-        }}
+        className="w-[794px] relative h-[1123px] font-tahoma  bg-white py-8 px-12  text-right "
       >
         {/* Header Section */}
         {/* Header Section */}
@@ -28,12 +22,12 @@ const CertificatePage2 = forwardRef<HTMLDivElement, CertificatePage2Props>(
 
         {/* Main Content */}
         <div className="ml-14 mt-3">
-          <p className="text-[22px] font-[900] leading-5">{data.page2Title}</p>
-          <p className=" text-xl mt-6 ">{data.page2Content}</p>
+          <p className="font-[900]">{data.page2Title}</p>
+          <p className="  mt-4 ">{data.page2Content}</p>
         </div>
 
         {/* Footer */}
-        <div className="absolute bottom-1 right-8">
+        <div className="absolute bottom-6  ml-12 ">
           <FooterQrCode qrCodeDataUrl={qrCodeDataUrl} />
         </div>
       </div>

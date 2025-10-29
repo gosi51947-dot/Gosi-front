@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        tahoma: ['Tahoma'],
+      },
       container: {
         center: true,
         padding: "4rem",
