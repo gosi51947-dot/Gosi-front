@@ -32,6 +32,7 @@ export interface CertificateData {
   // Page 1 - Company Information
   companyName: string;
   establishmentNumber: string;
+  systemType: string;
   subscriptionWage: string;
   totalWage: string;
   joiningDate: string;
@@ -85,6 +86,7 @@ export const defaultCertificateData: CertificateData = {
   
   companyName: "شركة جواهر الاتجاهات",
   establishmentNumber: "12545451",
+  systemType: "نظام التأمينات",
   subscriptionWage: "214545",
   totalWage: "52154135",
   joiningDate: "2025/04/01",

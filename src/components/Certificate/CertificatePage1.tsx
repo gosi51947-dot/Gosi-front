@@ -165,7 +165,7 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
                   النظام
                 </td>
                 <td className="bg-[#EEEFEF] text-center pb-3 p-1">
-                  نظام التأمينات
+                  {data.systemType}
                 </td>
               </tr>
               {/* secound */}
@@ -238,7 +238,6 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
             </tbody>
           </table>
         </div>
-
 
         {/* Footer Text */}
         <div className="mb-6  mt-40">

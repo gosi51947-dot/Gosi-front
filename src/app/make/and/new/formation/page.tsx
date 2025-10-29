@@ -30,6 +30,7 @@ const emptyInitialData: CertificateData = {
   },
   companyName: "",
   establishmentNumber: "",
+  systemType: "",
   subscriptionWage: "",
   totalWage: "",
   joiningDate: "",
@@ -483,6 +484,20 @@ export default function Formation() {
                       handleInputChange("establishmentNumber", e.target.value)
                     }
                     placeholder={defaultCertificateData.establishmentNumber}
+                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-mColor mb-2">
+                    النظام
+                  </label>
+                  <input
+                    type="text"
+                    value={certificateData.systemType}
+                    onChange={(e) =>
+                      handleInputChange("systemType", e.target.value)
+                    }
+                    placeholder={defaultCertificateData.systemType}
                     className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
