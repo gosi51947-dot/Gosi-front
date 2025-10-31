@@ -30,7 +30,7 @@ export default function RootLayout({
       </head>
       <body >
         <Navbar />
-        <div className="min-h-screen mt-[125px] lg:mt-[206px]">{children}</div>
+        <div className="min-h-screen mt-[70px] lg:mt-[200px]">{children}</div>
         <Footer />
 
         
