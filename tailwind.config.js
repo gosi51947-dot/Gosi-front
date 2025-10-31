@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         tahoma: ['Tahoma'],
+        ping: ['Ping'],
       },
       container: {
         center: true,

@@ -22,7 +22,9 @@ const CertificatePage2 = forwardRef<HTMLDivElement, CertificatePage2Props>(
 
         {/* Main Content */}
         <div className="ml-14 mt-3">
-          <p className="font-[900]">{data.page2Title}</p>
+          <p className="font-[900] whitespace-nowrap">
+          ﻭﻻ ﺗﺨﻞ ﻫﺬﻩ ﺍﻟﺸﻬﺎﺩﺓ ﺑﺤﻖ ﺍﻟﻤﺆﺳﺴﺔ ﻓﻲ ﺇ ﺟﺮﺍﺀ ﺃﻱ ﺗﻌﺪﻳﻼﺕ ﻋﻠﻰ ﺍﻟﺒﻴﺎﻧﺎﺕ ﺍﻟﻮﺍﺭﺩﺓ ﻓﻴﻬﺎ ﻭﻓﻘﺎ <br/>ﻟﻤﺎ ﻳﺘﺒﻴﻦ ﻟﻬﺎ ﻣﻦ ﻭﻗﺎﺋﻊ.
+          </p>
           <p className="  mt-4 ">{data.page2Content}</p>
         </div>
 

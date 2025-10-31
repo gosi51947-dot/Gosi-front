@@ -95,7 +95,7 @@ export const defaultCertificateData: CertificateData = {
   currentStatus: "نشط",
   
   footerText: "",
-  page2Title: "ﻭﻻ ﺗﺨﻞ ﻫﺬﻩ ﺍﻟﺸﻬﺎﺩﺓ ﺑﺤﻖ ﺍﻟﻤﺆﺳﺴﺔ ﻓﻲ ﺇ ﺟﺮﺍﺀ ﺃﻱ ﺗﻌﺪﻳﻼﺕ ﻋﻠﻰ ﺍﻟﺒﻴﺎﻧﺎﺕ ﺍﻟﻮﺍﺭﺩﺓ ﻓﻴﻬﺎ ﻭﻓﻘﺎ ﻟﻤﺎ ﻳﺘﺒﻴﻦ ﻟﻬﺎ ﻣﻦ ﻭﻗﺎﺋﻊ.",
+  page2Title: "",
   page2Content: "(ﻫﺬﻩ ﺍﻟﺸﻬﺎﺩﺓ ﺳﺎﺭﻳﺔ ﺍﻟﻤﻔﻌﻮﻝ ﻟﻤﺪﺓ 30 ﻳﻮﻡ ﻣﻦ ﺗﺎﺭﻳﺦ ﺇﺻﺪﺍﺭﻫﺎ)",
   
   qrCodeUrl: "",

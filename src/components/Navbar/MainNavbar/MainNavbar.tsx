@@ -203,7 +203,7 @@ export default function MainNavbar({
   return (
     <>
       {/* small devices navbar */}
-      <section className=" lg:hidden flex items-center px-4 py-2 justify-between  bg-mColor">
+      <section className=" lg:hidden fixed top-0 left-0 right-0 flex items-center px-4 py-2 justify-between  bg-mColor">
         {/* lgoo */}
         <Image src={gosiLogo} alt="gosi logo" width={80} />
 
@@ -358,7 +358,7 @@ export default function MainNavbar({
             </button>
           </p>
           {/* second column */}
-          <div className="flex gap-6 justify-center">
+          <div className="flex gap-6 justify-center ">
             {/* home icon */}
             <a
               href="https://www.gosi.gov.sa/"
