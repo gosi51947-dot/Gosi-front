@@ -1,7 +1,7 @@
 import { CertificateData } from '@/types/certificate'
 import Image from 'next/image'
 import React from 'react'
-
+import GosoLogoNew from "../../../../public/pdfimags/gosoLogoNew.svg"
 
 export default function HeaderLogo({data,numberPage}: {data: CertificateData,numberPage: string}) {
   return (
@@ -20,7 +20,7 @@ export default function HeaderLogo({data,numberPage}: {data: CertificateData,num
     <div className="flex flex-col items-end ">
       <div className="mb-3">
         <Image
-          src="/pdfimags/GosoLogo.svg"
+          src={GosoLogoNew}
           alt="GOSI Logo"
           width={90}
           height={65}
