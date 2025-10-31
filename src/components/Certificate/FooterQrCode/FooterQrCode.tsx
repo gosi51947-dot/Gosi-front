@@ -15,7 +15,7 @@ export default function FooterQrCode({
       {/* first column  qr code column */}
       <div className="flex   gap-2 justify-between items-end">
         {/* paragraph */}
-        <p className="opacity-40 text-[13px] whitespace-nowrap text-gray-900   font-[500]   ">
+        <p className="opacity-50 text-[13px] whitespace-nowrap  text-black   font-[500]   ">
           ﺗﺤﻘﻖ ﻣﻦ ﺻﺤﺔ ﻭﺻﻼﺣﻴﺔ ﺍﻟﺸﻬﺎﺩﺓ ﻋﺒﺮ ﺯﻳﺎﺭﺓ ﺍﻟﺮﺍﺑﻂ ﺃﺩﻧﺎﻩ ﻓﻲ ﺍﻟﻤﻮﻗﻊ ﺍﻻﻟﻜﺘﺮﻭﻧﻲ
           ﻟﻠﻤﺆﺳﺴﺔ ﺍﻟﻌﺎﻣﺔ <br />
           ﻟﻠﺘﺄﻣﻴﻨﺎﺕ ﺍﻻﺟﺘﻤﺎﻋﻴﺔ ﺍﻭ ﻋﻦ ﻃﺮﻳﻖ ﺍﺳﺘﺨﺪﺍﻡ ﺍﻟﺮﻣﺰ ﺍﻟﻤﻌﺮﻑ ﺍﻟﺘﺎﻟﻲ
