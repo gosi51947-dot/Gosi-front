@@ -27,8 +27,8 @@ const CertificatePage2 = forwardRef<HTMLDivElement, CertificatePage2Props>(
         </div>
 
         {/* Footer */}
-        <div className="absolute bottom-6  ml-12 ">
-          <FooterQrCode qrCodeDataUrl={qrCodeDataUrl} />
+        <div className="absolute bottom-6  ">
+          <FooterQrCode qrCodeDataUrl={qrCodeDataUrl} cerTwo={true} />
         </div>
       </div>
     );

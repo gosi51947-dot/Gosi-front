@@ -22,6 +22,8 @@ module.exports = {
         secColor: "#00BF00",
         blueColor: "#0064FF",
         grayColor: "#FEFEFF",
+        grayCell:"#f2f2f2",
+        cerColor:"#00122d"
       },
       keyframes: {
         slideIn: {
