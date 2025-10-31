@@ -64,7 +64,7 @@ export default function FooterQrCode({
         <article className="leading-4 text-[#121a44]">
           <p>
             المملكة العربية السعودية,الرياض 12622 - 8308 حي{" "}
-            <span className="tracking-wider">الوزارات</span> 3795
+            <span className="">الوزارات</span> 3795
           </p>
           <p className="text-[12px]">
             Kingdom of Saudi Arabia, Riyadh 12622-8308 Al Wizarat 3795
