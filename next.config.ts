@@ -11,10 +11,10 @@ const nextConfig: NextConfig = {
     domains: [],
     formats: ['image/webp', 'image/avif'],
   },
-  // i18n: {
-  //   locales: ['en', 'ar'],
-  //   defaultLocale: 'ar',
-  // },
+  i18n: {
+    locales: ['en', 'ar'],
+    defaultLocale: 'ar',
+  },
 };
 
 export default nextConfig;
