@@ -30,17 +30,17 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="absolute top-0  text-sm   left-0 right-0 z-50 whitespace-nowrap">
+    <nav className="absolute lg:fixed top-0  text-sm   left-0 right-0 z-50 whitespace-nowrap">
       {/* first part of navbar */}
       <div
-        className={`px-4 bg-blueColor  flex gap-2 items-center justify-around md:justify-center  mx-auto  ${
+        className={`px-4 bg-blueColor  flex gap-3 items-center justify-around md:justify-center  mx-auto  ${
           isScrolled ? "opacity-0 h-0 overflow-hidden p-0" : "opacity-100 p-[7.5px]"
         }`}
       >
-        <p className="text-grayColor font-semibold">
+        <p className="text-grayColor ">
           لتجربة أفضل .. حمل تطبيق gosi الجديد
         </p>
-        <button className="bg-mColor whitespace-nowrap font-semibold  text-grayColor px-4 py-2 rounded-[0.5rem]">
+        <button className="bg-mColor whitespace-nowrap   text-grayColor px-4 py-3 rounded-[0.5rem]">
           <a href="https://www.gosi.gov.sa/ar/MobileApp">حمله الان</a>
         </button>
       </div>
