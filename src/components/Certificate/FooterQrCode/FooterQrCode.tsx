@@ -30,7 +30,7 @@ export default function FooterQrCode({
         />
       </div>
       {/* secound colun */}
-      <p className="opacity-40 text-[8.8px] mr-1 text-[#818895] whitespace-nowrap">
+      <p className="opacity-40 text-[8.8px] mr-1 text-[#6d7583] whitespace-nowrap">
         <span>
         تعد هذه الشهادة من الوثائق الالكترونية الحـكومية الرسمية ويحظر قطيعاً
         تقليدها أو إدخال أي تعديلات عليها سواء بالإضـافة أو الحذف أو التغيير في

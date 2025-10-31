@@ -1,7 +1,7 @@
 import { CertificateData } from '@/types/certificate'
 import Image from 'next/image'
 import React from 'react'
-import GosoLogoNew from "../../../../public/pdfimags/gosoLogoNew.svg"
+import GosoLogoNew from "../../../../public/pdfimags/GosoLogo.svg"
 
 export default function HeaderLogo({data,numberPage}: {data: CertificateData,numberPage: string}) {
   return (
