@@ -139,7 +139,7 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
                   ﺍﻷﺟﺮ ﺍﻟﺨﺎﺿﻊ ﻟﻼﺷﺘﺮﺍﻙ
                 </td>
                 <td className="bg-grayCell w-[30%] flex justify-center items-center  ">
-                <span className="mb-3">{data.totalWage}</span>
+                <span className="mb-3">{data.subscriptionWage}</span>
                 <span className="mt-3">
                 {data.subscriptionWage && (
                       <Image
@@ -206,7 +206,7 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
 
         {/* Footer Text */}
         <div className="mb-6  mt-40">
-          <p className="   ">
+          <p className=" ">
             ﺗﺸﻬﺪ ﺍﻟﻤﺆﺳﺴﺔ ﺍﻟﻌﺎﻣﺔ ﻟﻠﺘﺄﻣﻴﻨﺎﺕ ﺍﻻﺟﺘﻤﺎﻋﻴﺔ ﺑﺄﻥ ﺍﻟﺒﻴﺎﻧﺎﺕ ﺍﻟﻤﻮﺿﺤﺔ ﺃﻋﻼﻩ
             ﺣﺴﺐ ﻣﺎ ﻫﻮ ﻣﺴﺠﻞ ﻓﻲ <br/>ﻧﻈﺎﻣﻬﺎ ﻭﺑﻨﺎﺀ ﻋﻠﻰ ﺍﻟﺒﻴﺎﻧﺎﺕ ﺍﻟﺤﺎﻟﻴﺔ ﻭﻭﻓﻘﺎ
             ﻟﻠﻮﺿﻊ ﺍﻟﺤﺎﻟﻲ ﻣﺎﻟﻢ ﻳﻄﺮﺃ ﺃﻱ ﺗﻐﻴﻴﺮ ﻋﻠﻰ ﺣﺎﻟﺔ ﺑﻴﺎﻧﺎﺕ ﺻﺎﺣﺐ ﺍﻟﻮﺛﻴﻘﺔ ﻭﻗﺪ
