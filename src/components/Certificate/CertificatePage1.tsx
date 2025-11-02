@@ -33,26 +33,36 @@ const CertificatePage1 = forwardRef<HTMLDivElement, CertificatePage1Props>(
           <table className="w-full ">
             <tbody className="flex flex-col gap-1">
               <tr className="grid grid-cols-6">
-                <td className=" px-3 py-1  col-span-2 ">ﺍﻻﺳﻢ</td>
-                <td className=" px-3 pb-3  bg-grayCell col-span-2">
-                  {data.name}
-                </td>
-                <td className=" px-3 py-1  col-span-1">تاريخ الميلاد</td>
-                <td className=" px-3 pb-3  bg-grayCell col-span-1  flex items-center ">
+                <div className="col-span-4 flex">
+                  <td className=" px-3 py-1  w-[45%]">ﺍﻻﺳﻢ</td>
+                  <td className=" px-3 pb-3 w-[55%] bg-grayCell grow">
+                    {data.name}
+                  </td>
+                </div>
+                <div className="col-span-2 flex">
+                <td className=" px-3 py-1  w-[45%]">تاريخ الميلاد</td>
+                <td className=" px-3 pb-3 w-[55%] bg-grayCell grow  flex items-center ">
                   {data.birthDate}
                 </td>
+                </div>
               </tr>
               <tr className="grid grid-cols-6">
-                <td className=" px-3 py-1  col-span-2">
+               <div className="col-span-4 flex">
+               <td className=" px-3 py-1  w-[45%]">
                   رقم الهوية الوطنية / الإقامة
                 </td>
-                <td className=" px-3 pb-3 bg-grayCell col-span-2">
+                <td className=" px-3 pb-3 bg-grayCell w-[55%] grow">
                   {data.nationalId}
                 </td>
-                <td className=" px-3 py-1  col-span-1">الجنسية</td>
-                <td className=" px-3 pb-3 bg-grayCell col-span-1">
+               </div>
+                <div className="col-span-2 flex">
+                <td className=" px-3 py-1  w-[45%]">
+                  الجنسية
+                </td>
+                <td className=" px-3 pb-3 bg-grayCell w-[55%] grow">
                   {data.nationality}
                 </td>
+                </div>
               </tr>
             </tbody>
           </table>

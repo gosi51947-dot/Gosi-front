@@ -80,28 +80,28 @@ function CertificateContent() {
   return (
     <section>
       <div className="">
-        <p className="bg-[#F3F4F5] h-[71px] md:h-[275px] lg:h-[90px] flex items-end">
-          <span className="text-secColor hidden md:block pb-6 p-4 text-sm lg:py-10 lg:pr-8">
+        <p className="bg-[#F3F4F5] h-[71px] sm:h-[275px] md:h-[90px] flex items-end">
+          <span className="text-secColor font-bold hidden sm:block pb-6 p-4 text-sm lg:py-10 lg:pr-8">
             الرئيسية
           </span>
         </p>
 
         {/* ✅ Main card */}
         <div className="mt-20">
-          <div className="container">
-            <div className="flex flex-col text-sm bg-[#F3F4F5] md:flex-row md:mx-20 rounded-md overflow-hidden">
+          <div className="px-10 ">
+            <div className="flex flex-col text-sm bg-[#F3F4F5] sm:flex-row md:mx-20 rounded-md overflow-hidden">
               <div className="bg-[#00BF00] flex items-center p-2 md:p-3 justify-center">
                 <span className="rounded-full bg-secColor border border-white p-1">
                   <IoCheckmark className="font-bold text-xl text-white" />
                 </span>
               </div>
 
-              <div className="space-y-2 p-4 grow">
+              <div className=" p-4 pt-1 sm:pt-4 grow">
                 <p className="pb-2 border-b text-[16.5px] text-[#334157] border-b-[#e0e0e08a]">تم التحقق من الشهادة وهي صالحة وسارية المفعول</p>
                 <button
                   onClick={handleDownload}
                   disabled={loading}
-                  className="bg-secColor text-[15px] mr-1 transition-all duration-300 hover:bg-secColor/50 px-4 py-3 rounded-[16px] disabled:opacity-50"
+                  className="bg-secColor mt-2 text-[15px] mr-1 transition-all duration-300 hover:bg-secColor/50 px-4 py-3 rounded-[16px] disabled:opacity-50"
                 >
                   تنزيل نسخة من الشهادة
                 </button>
@@ -109,8 +109,8 @@ function CertificateContent() {
             </div>
 
             <div className="mt-10 w-full flex justify-center">
-              <button className="text-sm hover:bg-secColor transition-[background-color] duration-500 bg-secColor/60 text-gray-50 rounded-md px-[6px] py-2">
-                <a href="https://www.gosi.gov.sa/ar">العودة للصفحة الرئيسية</a>
+              <button className="text-sm hover:bg-secColor transition-[background-color] duration-500 bg-secColor/60 text-gray-50 rounded-md  py-[10px]">
+                <a href="https://www.gosi.gov.sa/ar" className="px-[12px] ">العودة للصفحة الرئيسية</a>
               </button>
             </div>
           </div>
@@ -119,8 +119,8 @@ function CertificateContent() {
 
       {/* باقي كود الـ feedback كما هو */}
       {/* opinion popup */}
-      <div className="fixed top-[50%] cursor-pointer left-[0px]">
-        <Image src={OpinionImage} alt="opinion" width={38} height={38.3} />
+      <div className="fixed top-[50%] cursor-pointer  left-[0px]">
+        <Image src={OpinionImage} className="rounded-r-lg h-[87px]" alt="opinion" width={38} height={38.3} />
       </div>
       
       {/* ... */}

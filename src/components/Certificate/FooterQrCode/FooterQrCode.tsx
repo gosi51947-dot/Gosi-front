@@ -31,7 +31,7 @@ export default function FooterQrCode({
       </div>
       {/* secound colun */}
       <p
-        id="mohamed"
+        
         className="opacity-40  text-[8.8px] mr-1   text-[rgb(54 56 59)] whitespace-nowrap"
       >
         <span>
